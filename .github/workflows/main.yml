@@ -1,8 +1,5 @@
 name: echo
-on:
-  push:
-    branches:
-      - main
+on: push
 
 jobs:
   echo_string:
