@@ -2,7 +2,7 @@ name: echo
 on:
   push:
     branches:
-    - main
+      - main
 
 jobs:
   echo_string:
