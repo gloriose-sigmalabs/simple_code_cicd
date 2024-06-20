@@ -2,12 +2,14 @@ name: echo
 on: push
 
 jobs:
-  echo_string:
-    name: Print String
-    runs-on: ubuntu-latest
-    steps:
-      - name: Run Echo
-        run: echo "Hello"
-  
-    
-    
+  name: Install Python 
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+    with:
+      python-version: '3.11' 
+    - name: run python file
+        run: python what_is_your_name.py
+
+
