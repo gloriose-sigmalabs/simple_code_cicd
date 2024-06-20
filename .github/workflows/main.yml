@@ -11,6 +11,4 @@ jobs:
         with:
           python-version: '3.11' 
       - name: run python file
-          run: python what_is_your_name.py
-
-
+        run: python what_is_your_name.py
